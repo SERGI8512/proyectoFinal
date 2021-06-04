@@ -1,2 +1,10 @@
-li{justify-content: space-around
-    }
+.px-3 {
+
+box-shadow:inset 1px -1px 4px 1px rgb(103, 101, 101);
+}
+
+a{
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-evenly;
+}
