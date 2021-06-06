@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { cuidador } from 'src/app/interfaces/cuidador.interface';
+import { CuidadoresService } from 'src/app/services/cuidadores.service';
 
 @Component({
   selector: 'app-cuidadores',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuidadoresComponent implements OnInit {
 
-  constructor() { }
+  arrCuidadores: cuidador[];
+
+  constructor(private CuidadoresService: CuidadoresService) { }
 
   ngOnInit(): void {
+
+    this.CuidadoresService.getAllCuidadores()
+      .then(response => this.arrCuidadores = response)
+      .catch((error) => console.log(error));
+    console.log(this.arrCuidadores);
   }
 
 }

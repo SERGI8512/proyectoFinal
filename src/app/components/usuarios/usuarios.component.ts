@@ -9,15 +9,14 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 })
 export class UsuariosComponent implements OnInit {
 
-  @Input() usuario: usuario;
+  arrUsuarios: usuario[];
 
-  constructor() {
-
-  }
+  constructor(private UsuariosService: UsuariosService) { }
 
   ngOnInit(): void {
+    this.UsuariosService.getAllUsuarios()
+      .then(response => this.arrUsuarios = response)
+      .catch((error) => console.log(error));
   }
-
-
 
 }

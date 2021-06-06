@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsuariosService } from 'src/app/services/usuarios.service';
+
+declare var Swal;
 
 @Component({
   selector: 'app-formulario-usuarios',
@@ -9,10 +12,12 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 })
 export class FormularioUsuariosComponent implements OnInit {
 
-  newUsuario: FormGroup
+  newUsuarioForm: FormGroup;
+
+  router: Router;
 
   constructor(private usuariosService: UsuariosService) {
-    this.newUsuario = new FormGroup({
+    this.newUsuarioForm = new FormGroup({
       nombre: new FormControl,
       apellido: new FormControl,
       email: new FormControl,
@@ -25,6 +30,14 @@ export class FormularioUsuariosComponent implements OnInit {
     })
   }
   ngOnInit(): void {
+  }
+
+  async onSubmit() {
+    const response = await this.usuariosService.newUsuario(this.newUsuarioForm.value);
+    if (response['effectedRows'] === 1) {
+      Swal.fire('Usuario Insertado', 'Se ha creado un nuevo usuario', 'succes');
+      this.router;
+    }
   }
 
 }

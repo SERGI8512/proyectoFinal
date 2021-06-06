@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { usuario } from '../interfaces/usuario.interface';
 
 @Injectable({
@@ -10,7 +10,7 @@ export class UsuariosService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'https://localhost3000/'
+    this.baseUrl = 'http://localhost:3000'
   }
 
   getAllUsuarios(): Promise<usuario[]> {

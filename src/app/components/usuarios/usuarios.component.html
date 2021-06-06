@@ -1,8 +1,9 @@
 <div class="usuarios">
-    <div class="usuario">
-        <h2>{{usuario.nombre}}{{usuario.apellido}} / ID: {{usuario.id}}</h2>
-        <h3>{{usuario.edad}}</h3>
-        <h5>{{usuario.latitude}}</h5>
-        <h5>{{usuario.longitude}}</h5>
+    <div class="usuario" *ngFor="let usuario of arrUsuarios">
+        <h3>{{usuario.nombre}}</h3>
+        <h3>{{usuario.apellidos}}</h3>
+        <h5>EDAD: {{usuario.edad}} / ID: {{usuario.id}}</h5>
+        <h6>{{usuario.latitude}}</h6>
+        <h6>{{usuario.longitude}}</h6>
     </div>
 </div>
