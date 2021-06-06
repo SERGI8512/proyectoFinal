@@ -1,1 +1,9 @@
-<p>mascotas works!</p>
+<div class="mascotas">
+    <div class="mascota" *ngFor="let mascota of arrMascotas">
+        <h3>{{mascota.nombre}}</h3>
+        <h5>ID: {{mascota.id}}</h5>
+        <h6>{{mascota.raza}}</h6>
+        <h6>{{mascota.caracter}}</h6>
+        <h6>{{mascota.fk_cliente}}</h6>
+    </div>
+</div>

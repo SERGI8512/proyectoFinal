@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { cuidador } from '../interfaces/cuidador.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +10,11 @@ export class CuidadoresService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'http://localhost3000:/'
+    this.baseUrl = 'http://localhost:3000'
   }
 
-  getAllCuidadores() {
-    return this.httpClient.get(`${this.baseUrl}/api/cuidadores`).toPromise();
+  getAllCuidadores(): Promise<cuidador[]> {
+    return this.httpClient.get<cuidador[]>(`${this.baseUrl}/api/cuidadores`).toPromise();
   }
 
   logIn(formsValue) {
@@ -21,6 +22,6 @@ export class CuidadoresService {
   }
 
   newCuidador(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/cuidadores/new`, formsValue).toPromise();
+    return this.httpClient.post(`${this.baseUrl}/api/cuidadores/new`, formsValue).toPromise();
   }
 }

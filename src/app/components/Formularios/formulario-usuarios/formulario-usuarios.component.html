@@ -1,1 +1,42 @@
-<p>formulario-usuarios works!</p>
+<div class="row">
+    <div class="col-12">
+        <form [formGroup]="newUsuarioForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" formControlName="nombre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Apellido</label>
+                <input type="text" class="form-control" formControlName="apellido">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" formControlName="email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Dirección</label>
+                <input type="text" class="form-control" formControlName="direccion">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Edad</label>
+                <input type="text" class="form-control" formControlName="edad">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Género</label>
+                <input type="text" class="form-control" formControlName="genero">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Teléfono</label>
+                <input type="text" class="form-control" formControlName="telefono">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" formControlName="password">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Repeat Password</label>
+                <input type="text" class="form-control" formControlName="repeatPassword">
+            </div>
+            <button class="btn btn-success">Enviar</button>
+        </form>
+    </div>
