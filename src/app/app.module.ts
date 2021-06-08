@@ -15,6 +15,7 @@ import { FormularioUsuariosComponent } from './components/Formularios/formulario
 import { FormularioMascotasComponent } from './components/Formularios/formulario-mascotas/formulario-mascotas.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaginaInicioComponent } from './components/pagina-inicio/pagina-inicio.component';
+import { DestinosComponent } from './components/destinos/destinos.component';
 
 
 
@@ -30,7 +31,8 @@ import { PaginaInicioComponent } from './components/pagina-inicio/pagina-inicio.
     FormularioCuidadoresComponent,
     FormularioUsuariosComponent,
     FormularioMascotasComponent,
-    PaginaInicioComponent
+    PaginaInicioComponent,
+    DestinosComponent
 
   ],
   imports: [
