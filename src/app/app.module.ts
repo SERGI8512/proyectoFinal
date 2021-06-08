@@ -16,14 +16,13 @@ import { FormularioMascotasComponent } from './components/Formularios/formulario
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaginaInicioComponent } from './components/pagina-inicio/pagina-inicio.component';
 import { DestinosComponent } from './components/destinos/destinos.component';
-
+import { FormularioLogInComponent } from './components/formularios/formulario-log-in/formulario-log-in.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    
     NavBarComponent,
     CuidadoresComponent,
     UsuariosComponent,
@@ -32,7 +31,8 @@ import { DestinosComponent } from './components/destinos/destinos.component';
     FormularioUsuariosComponent,
     FormularioMascotasComponent,
     PaginaInicioComponent,
-    DestinosComponent
+    DestinosComponent,
+    FormularioLogInComponent
 
   ],
   imports: [

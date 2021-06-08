@@ -1,1 +1,42 @@
-<p>formulario-mascotas works!</p>
+<div class="row">
+    <div class="col-12">
+        <form [formGroup]="newMascotaForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Especie</label>
+                <input type="text" class="form-control" formControlName="especie">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Raza</label>
+                <input type="text" class="form-control" formControlName="raza">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tamaño</label>
+                <input type="text" class="form-control" formControlName="tamaño">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Edad</label>
+                <input type="text" class="form-control" formControlName="edad">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sexo</label>
+                <input type="text" class="form-control" formControlName="sexo">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Carácter</label>
+                <input type="text" class="form-control" formControlName="caracter">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Más sobre tu mascota</label>
+                <input type="text" class="form-control" formControlName="masSobre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cuidados Especiales</label>
+                <input type="text" class="form-control" formControlName="cuidadosEspeciales">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Qué come?</label>
+                <input type="text" class="form-control" formControlName="queCome">
+            </div>
+            <button class="btn btn-success">Enviar</button>
+        </form>
+    </div>

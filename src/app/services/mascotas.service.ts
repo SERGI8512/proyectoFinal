@@ -14,11 +14,11 @@ export class MascotasService {
   }
 
   getAllMascotas(): Promise<mascota[]> {
-    return this.httpClient.get<mascota[]>(`${this.baseUrl}/api/usuarios/mascotas`).toPromise();
+    return this.httpClient.get<mascota[]>(`${this.baseUrl}/api/mascotas`).toPromise();
   }
 
   newMascota(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/api/usuarios/mascotas/new`, formsValue).toPromise();
+    return this.httpClient.post(`${this.baseUrl}/api/mascotas/new`, formsValue).toPromise();
   }
 
 }

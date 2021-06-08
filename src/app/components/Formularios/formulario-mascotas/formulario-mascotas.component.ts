@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { MascotasService } from 'src/app/services/mascotas.service';
+
+declare var Swal;
 
 @Component({
   selector: 'app-formulario-mascotas',
@@ -7,9 +12,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioMascotasComponent implements OnInit {
 
-  constructor() { }
+  newMascotaForm: FormGroup;
+
+  router: Router;
+
+  constructor(private mascotasService: MascotasService) {
+    this.newMascotaForm = new FormGroup({
+      especie: new FormControl,
+      raza: new FormControl,
+      tamaño: new FormControl,
+      edad: new FormControl,
+      caracter: new FormControl,
+      cuidadosEspeciales: new FormControl,
+      queCome: new FormControl,
+      sexo: new FormControl,
+      masSobre: new FormControl,
+      //FOTO MASCOTA
+    })
+  }
 
   ngOnInit(): void {
+  }
+
+  async onSubmit() {
+    const response = await this.mascotasService.newMascota(this.newMascotaForm.value);
+    if (response['effectedRows'] === 1) {
+      Swal.fire('Mascota añadida correctamente', 'Se ha creado una mascota correctamente', 'succes');
+      this.router;
+    }
   }
 
 }
