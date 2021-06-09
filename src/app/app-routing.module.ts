@@ -9,6 +9,7 @@ import { FormularioUsuariosComponent } from './components/Formularios/formulario
 import { DestinosComponent } from './components/destinos/destinos.component';
 import { FormularioCuidadoresComponent } from './components/Formularios/formulario-cuidadores/formulario-cuidadores.component';
 import { FormularioMascotasComponent } from './components/Formularios/formulario-mascotas/formulario-mascotas.component';
+import { FormularioLogInComponent } from './components/formularios/formulario-log-in/formulario-log-in.component';
 
 const routes: Routes = [
   { path: 'api/usuarios', component: UsuariosComponent },
@@ -18,8 +19,8 @@ const routes: Routes = [
   { path: 'api/usuarios/new', component: FormularioUsuariosComponent },
   { path: 'api/cuidadores/new', component: FormularioCuidadoresComponent },
   { path: 'destinos', component: DestinosComponent },
-  { path: 'login/cuidadores', component: FormularioCuidadoresComponent },
-  { path: 'login/usuarios', component: FormularioUsuariosComponent },
+  { path: 'login/cuidadores', component: FormularioLogInComponent },
+  { path: 'login/usuarios', component: FormularioLogInComponent },
   { path: '**', redirectTo: '/' }
 ];
 
