@@ -12,6 +12,7 @@ import { FormularioMascotasComponent } from './components/Formularios/formulario
 import { FormularioLogInComponent } from './components/formularios/formulario-log-in/formulario-log-in.component';
 
 const routes: Routes = [
+  { path: 'home', component: PaginaInicioComponent },
   { path: 'api/usuarios', component: UsuariosComponent },
   { path: 'api/cuidadores', component: CuidadoresComponent },
   { path: 'api/mascotas', component: MascotasComponent },
@@ -21,7 +22,7 @@ const routes: Routes = [
   { path: 'destinos', component: DestinosComponent },
   { path: 'login/cuidadores', component: FormularioLogInComponent },
   { path: 'login/usuarios', component: FormularioLogInComponent },
-  { path: '**', redirectTo: '/' }
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
