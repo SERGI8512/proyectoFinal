@@ -1,18 +1,26 @@
 .px-3 {
-
 box-shadow:inset 1px -1px 4px 1px rgb(103, 101, 101);
 }
 
+
+
 a{
-    padding-left: 10px;
-    padding-right: 10px;
-    
-    
+    justify-content: space-around;
    
+    margin: 0px 10px 0px 10px;
 }
 
+.logo{
+ position: absolute;
+ margin: 2px 0 0px 5px;
+ height: 60px;
 
+}
 
+#botones{
+ align-items: center;
+ justify-content: center;
+}
 
 
 .svg{
