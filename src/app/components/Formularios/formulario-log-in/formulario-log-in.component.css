@@ -1,0 +1,29 @@
+
+/*
+
+FALTA MIRAR PARA QUE LA IMAGEN DE FONDO OUCPE EL 100% Y EL TEMA RESPONSIVE.
+
+*/
+
+
+.container{
+    width: 100%;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    background: url(https://www.fredolsen.es/archivos/images/landing/viajar-con-mascotas/imagen-separador-mascotas-2.jpg);
+}
+
+.col-3{
+    text-align: center;
+    padding: 20px;
+    margin: 50px 0 0 0;
+    border-radius: 5px;
+}
+
+#btnLogIn{
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 35px;
+    margin: 10px;
+}

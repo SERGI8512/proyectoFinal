@@ -12,6 +12,8 @@ import { FormularioMascotasComponent } from './components/Formularios/formulario
 import { FormularioLogInComponent } from './components/formularios/formulario-log-in/formulario-log-in.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { DondeVaisComponent } from './components/donde-vais/donde-vais.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes: Routes = [
   { path: 'home', component: PaginaInicioComponent },
@@ -25,7 +27,9 @@ const routes: Routes = [
   { path: 'login', component: LogInComponent },
   { path: 'login/cuidadores', component: FormularioLogInComponent },
   { path: 'login/usuarios', component: FormularioLogInComponent },
+  { path: 'dondeVais', component: DondeVaisComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'aboutUs', component: AboutUsComponent },
   { path: '**', redirectTo: '/home' }
 ];
 

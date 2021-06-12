@@ -20,6 +20,7 @@ import { FormularioLogInComponent } from './components/formularios/formulario-lo
 import { LogInComponent } from './components/log-in/log-in.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { DondeVaisComponent } from './components/donde-vais/donde-vais.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { DondeVaisComponent } from './components/donde-vais/donde-vais.component
     FormularioLogInComponent,
     LogInComponent,
     BlogComponent,
-    DondeVaisComponent
+    DondeVaisComponent,
+    AboutUsComponent
 
   ],
   imports: [
