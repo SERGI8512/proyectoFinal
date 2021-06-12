@@ -1,0 +1,58 @@
+.logins{
+    width: 100%;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    background: url(https://www.futuroafondo.com/sites/default/files/articulos/fondo_mascotas.jpg) fixed center;
+}
+
+.logUser{
+    width: 313px;
+    height: 325px;
+    margin: 93.5px 50px 0 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+.hLogUser{
+    padding: 30px;
+    color: black;
+}
+
+.logCuidador{
+    width: 313px;
+    height: 325px;
+    margin: 93.5px 50px 0 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+.hLogCuidador{
+    padding: 30px;
+    color: black;
+}
+
+.logNew{
+    width: 313px;
+    height: 325px;
+    margin: 93.5px 20px 0 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+.hlogNew{
+    padding: 30px;
+    color: black;
+}
+
+.paginado{
+    display: flex;
+}

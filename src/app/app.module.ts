@@ -17,6 +17,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PaginaInicioComponent } from './components/pagina-inicio/pagina-inicio.component';
 import { DestinosComponent } from './components/destinos/destinos.component';
 import { FormularioLogInComponent } from './components/formularios/formulario-log-in/formulario-log-in.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { DondeVaisComponent } from './components/donde-vais/donde-vais.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { FormularioLogInComponent } from './components/formularios/formulario-lo
     FormularioMascotasComponent,
     PaginaInicioComponent,
     DestinosComponent,
-    FormularioLogInComponent
+    FormularioLogInComponent,
+    LogInComponent,
+    BlogComponent,
+    DondeVaisComponent
 
   ],
   imports: [

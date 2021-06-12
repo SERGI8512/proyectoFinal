@@ -1,15 +1,52 @@
+.titulo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    width: auto;
+    margin-top: 10px;
+    padding: 30px;
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+}
+
 .usuarios{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+img{
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 .usuario{
     width: 200px;
-    height: 200px;
+    height: auto;
     padding: 20px;
     margin: 10px;
     border: 3px solid lightseagreen;
     border-radius: 10%;
     text-align: center;
+}
+
+.paginado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btnMascotas{
+    margin: 20px 20px 0 0;
+}
+
+.btnCuidadores{
+    margin: 20px 0 0 20px;
 }
