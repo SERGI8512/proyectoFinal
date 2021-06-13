@@ -36,6 +36,8 @@ export class FormularioCuidadoresComponent implements OnInit {
 
   async onSubmit() {
     const response = await this.cuidadoresService.newCuidador(this.newCuidadorForm.value);
+    console.log(response);
+
     if (response['effectedRows'] === 1) {
       Swal.fire('Cuidador Insertado Correctamente', 'Se ha creado un nuevo cuidador', 'succes');
       this.router;
