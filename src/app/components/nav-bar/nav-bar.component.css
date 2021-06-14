@@ -28,3 +28,16 @@ a{
     flex-flow: nowrap;
     justify-content: center;
 }
+.botonesNavBar{
+    margin: 16.98px 0 0 0;
+}
+
+.conatiner{
+    width: 70%;
+    height: auto;
+}
+
+.contenedorLi{
+    width: auto ;
+    height: 50%;
+}
