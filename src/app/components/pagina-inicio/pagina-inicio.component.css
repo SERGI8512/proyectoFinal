@@ -69,3 +69,9 @@ body {
 .col-md-7{
 padding:100px;
 }
+
+.parallax-container {
+      position: relative;
+      overflow: hidden;
+      height: 500px;
+    }
