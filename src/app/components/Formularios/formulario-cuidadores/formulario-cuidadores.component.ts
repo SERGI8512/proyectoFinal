@@ -21,6 +21,7 @@ export class FormularioCuidadoresComponent implements OnInit {
     this.newCuidadorForm = new FormGroup({
       nombre: new FormControl,
       apellido: new FormControl,
+      experimentado: new FormControl,
       email: new FormControl,
       direccion: new FormControl,
       edad: new FormControl,

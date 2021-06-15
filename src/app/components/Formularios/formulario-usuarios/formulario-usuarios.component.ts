@@ -19,7 +19,7 @@ export class FormularioUsuariosComponent implements OnInit {
   constructor(private usuariosService: UsuariosService) {
     this.newUsuarioForm = new FormGroup({
       nombre: new FormControl,
-      apellido: new FormControl,
+      apellidos: new FormControl,
       email: new FormControl,
       direccion: new FormControl,
       edad: new FormControl,
