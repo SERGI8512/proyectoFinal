@@ -1,21 +1,27 @@
 <div class="titulo">
     <h1>Mascotas Registradas</h1>
 </div>
-<div class="mascotas">
-    <div class="mascota" *ngFor="let mascota of arrMascotas">
-        <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png" alt="">
-        <h3>{{mascota.nombre}}</h3>
-        <h5>ID: {{mascota.id}}</h5>
-        <h6>{{mascota.raza}}</h6>
-        <h6>{{mascota.caracter}}</h6>
-        <h6>{{mascota.fk_cliente}}</h6>
-    </div>
-</div>
 <div class="paginado">
     <div class="btnUsuarios">
         <p><a class="btn btn-lg btn-primary" href="api/usuarios">Ver Usuarios</a></p>
     </div>
     <div class="btnCuidadores">
         <p><a class="btn btn-lg btn-primary" href="api/cuidadores">Ver Cuidadores</a></p>
+    </div>
+</div>
+<div class="mascotas">
+    <div class="mascota" *ngFor="let mascota of arrMascotas">
+        <div class="btnUsuarios">
+            <p><a id="btnPerfilCompleto" class="btn btn-lg btn-primary" href="api/usuarios">Perfil Completo</a></p>
+        </div>
+        <h4>{{mascota.nombre}} (ID {{mascota.id}})</h4>
+        <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png" alt="">
+        <h6>{{mascota.especie}} ({{mascota.sexo}}) {{mascota.raza}}</h6>
+        <h6>Años: {{mascota.edad}} Peso: {{mascota.peso}} KG</h6>
+        <h6>Carácter: {{mascota.caracter}}</h6>
+        <h6>Alimentación: {{mascota.queCome}}</h6>
+        <h6>Cuidados Especiales: {{mascota.cuidadosEspeciales}}</h6>
+        <h6>Más Sobre {{mascota.nombre}}: {{mascota.masSobre}}</h6>
+
     </div>
 </div>

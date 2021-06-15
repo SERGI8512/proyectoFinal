@@ -18,6 +18,7 @@ export class FormularioMascotasComponent implements OnInit {
 
   constructor(private mascotasService: MascotasService) {
     this.newMascotaForm = new FormGroup({
+      nombre: new FormControl,
       especie: new FormControl,
       raza: new FormControl,
       tamaño: new FormControl,
