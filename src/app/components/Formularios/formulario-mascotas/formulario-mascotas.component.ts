@@ -21,13 +21,14 @@ export class FormularioMascotasComponent implements OnInit {
       nombre: new FormControl,
       especie: new FormControl,
       raza: new FormControl,
-      tamaño: new FormControl,
+      peso: new FormControl,
+      sexo: new FormControl,
       edad: new FormControl,
       caracter: new FormControl,
       cuidadosEspeciales: new FormControl,
       queCome: new FormControl,
-      sexo: new FormControl,
       masSobre: new FormControl,
+      fk_cliente: new FormControl
       //FOTO MASCOTA
     })
   }
