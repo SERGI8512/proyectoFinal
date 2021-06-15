@@ -25,6 +25,7 @@ export class FormularioCuidadoresComponent implements OnInit {
       direccion: new FormControl,
       edad: new FormControl,
       genero: new FormControl,
+      razasAdmitidas: new FormControl,
       telefono: new FormControl,
       password: new FormControl,
       repeatPassword: new FormControl
