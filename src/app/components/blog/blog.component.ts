@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { mascota } from 'src/app/interfaces/mascota.interface';
+import { MascotasService } from 'src/app/services/mascotas.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
+  
+  arrMascotas: mascota[];
 
-  constructor() { }
+  constructor(private mascotasService: MascotasService) { }
 
   ngOnInit(): void {
+      this.mascotasService.getAllMascotas()
+        .then(response => this.arrMascotas = response)
+        .catch((error) => console.log(error));
   }
 
 }

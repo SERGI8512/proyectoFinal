@@ -1,3 +1,57 @@
-<div class="container">
-    <p>AQUÍ VA EL BLOG</p>
+<div class="titulo">
+    <h1 class="section-heading">Mascotas Registradas</h1>
 </div>
+<div class="paginado">
+    <div class="btnUsuarios">
+        <p><a class="btn btn-lg btn-primary" href="api/usuarios">Ver Usuarios</a></p>
+    </div>
+    <div class="btnCuidadores">
+        <p><a class="btn btn-lg btn-primary" href="api/cuidadores">Ver Cuidadores</a></p>
+    </div>
+</div>
+
+
+
+<div class="mascotas">
+    <div class="mascota" *ngFor="let mascota of arrMascotas">
+        
+        <section class="team">
+          
+            <div class="container">
+               
+                <div class="profile">
+                    <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png"
+                        alt="" /><span class="name">{{mascota.nombre}}</span>
+                        
+                </div>
+
+                
+
+            </div>
+        </section>
+        
+        <!-- <h4>(ID {{mascota.id}})</h4>
+        
+        <h6>{{mascota.especie}} ({{mascota.sexo}}) {{mascota.raza}}</h6>
+        <h6>Años: {{mascota.edad}} Peso: {{mascota.peso}} KG</h6>
+        <h6>Carácter: {{mascota.caracter}}</h6>
+        <h6>Alimentación: {{mascota.queCome}}</h6>
+        <h6>Cuidados Especiales: {{mascota.cuidadosEspeciales}}</h6>
+        <h6>Más Sobre {{mascota.nombre}}: {{mascota.masSobre}}</h6> -->
+
+    </div>
+</div>
+
+
+<h1>lorem*1000</h1>
+
+
+
+<!-- Embedding Fonts from google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet" />
+
+
+
+
