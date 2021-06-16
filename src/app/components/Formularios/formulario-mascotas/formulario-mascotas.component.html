@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-12">
         <form [formGroup]="newMascotaForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
@@ -47,4 +47,96 @@
             </div>
             <button class="btn btn-success">Enviar</button>
         </form>
+    </div> -->
+
+<div class="card-3d-wrap mx-auto">
+    <div class="card-3d-wrapper">
+        <div class="card-front">
+            <div class="section text-center">
+                <h4 class="mb-4 pb-3 text-white"> Nueva Mascota</h4>
+
+                <form [formGroup]="newMascotaForm" (ngSubmit)="onSubmit()">
+
+                    <div class="form-group ">
+
+                        <input placeholder="Nombre" name="logpass" type="text" id="logpass" class="form-control"
+                            formControlName="nombre">
+                        <i class="input-icon uil uil-lock-alt"></i>
+
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Especie" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="especie">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Raza" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="raza">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Peso (KG)" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="peso">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Sexo" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="sexo">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Edad" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="edad">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Carácter" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="caracter">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Cuidados Especiales" type="text" name="logpass" class="form-control"
+                                id="logpass" formControlName="cuidadosEspeciales">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Que come tu mascota?" type="text" name="logpass" class="form-control"
+                                id="logpass" formControlName="queCome">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Que nos puedes contar de tu mascota?" type="text" name="logpass"
+                                class="form-control" id="logpass" formControlName="masSobre">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="fk_cliente" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="fk_cliente">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <button id="btnEnviar" class="btn btn-success">Registra a tu Mascota!</button>
+                </form>
+            </div>
+        </div>
     </div>
+</div>

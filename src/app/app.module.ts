@@ -21,6 +21,9 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { DondeVaisComponent } from './components/donde-vais/donde-vais.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PerfilUsuarioComponent } from './components/Perfiles/perfil-usuario/perfil-usuario.component';
+import { PerfilCuidadorComponent } from './components/Perfiles/perfil-cuidador/perfil-cuidador.component';
+import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/perfil-mascota.component';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     LogInComponent,
     BlogComponent,
     DondeVaisComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PerfilUsuarioComponent,
+    PerfilCuidadorComponent,
+    PerfilMascotaComponent
 
   ],
   imports: [

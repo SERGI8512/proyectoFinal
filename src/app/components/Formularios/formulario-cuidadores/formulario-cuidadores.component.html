@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="col-3">
         <form [formGroup]="newCuidadorForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
@@ -47,4 +47,96 @@
             </div>
             <button id="btnEnviar" class="btn btn-success">Enviar</button>
         </form>
+    </div> -->
+<div class="card-3d-wrap mx-auto">
+    <div class="card-3d-wrapper">
+        <div class="card-front">
+
+            <div class="section text-center">
+                <h4 class="mb-4 pb-3 text-white"> Nuevo Cuidador</h4>
+
+                <form [formGroup]="newCuidadorForm" (ngSubmit)="onSubmit()">
+
+                    <div class="form-group ">
+
+                        <input placeholder="Nombre" name="logpass" type="text" id="logpass" class="form-control"
+                            formControlName="nombre">
+                        <i class="input-icon uil uil-lock-alt"></i>
+
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Apellidos" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="apellido">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Experimentado?" type="text" name="logpass" class="form-control"
+                                id="logpass" formControlName="experimentado">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Email" type="email" name="logpass" class="form-control" id="logpass"
+                                formControlName="email">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Dirección" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="direccion">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Edad" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="edad">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Género" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="genero">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Razas Admitidas" type="text" name="logpass" class="form-control"
+                                id="logpass" formControlName="razasAdmitidas">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Teléfono" type="text" name="logpass" class="form-control" id="logpass"
+                                formControlName="telefono">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Password" type="password" name="logpass" class="form-control"
+                                id="logpass" formControlName="password">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <input placeholder="Repeat Password" type="password" name="logpass" class="form-control"
+                                id="logpass" formControlName="repeatPassword">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                    </div>
+                    <button id="btnEnviar" class="btn btn-success">Registrarse</button>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
