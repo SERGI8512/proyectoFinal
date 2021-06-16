@@ -1,15 +1,54 @@
-<div class="logins">
-    <div class="logUser">
-        <h1 class="hLogUser">Ya tienes una cuenta de usuario?</h1>
-        <p><a class="btn btn-lg btn-primary" href="login/usuarios">LogIn</a></p>
-    </div>
-    <div class="logNew">
-        <h1 class="hlogNew">Todavía no tienes una cuenta?</h1>
-        <p><a class="btn btn-lg btn-primary" href="api/usuarios/new">Regístrate</a></p>
-    </div>
-    <div class="logCuidador">
-        <h1 class="hLogCuidador">Ya tienes una cuenta de cuidador?</h1>
-        <p><a class="btn btn-lg btn-primary" href="login/cuidadores">LogIn</a></p>
-    </div>
 
+
+
+<div id="section"class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"><span>Ya tengo cuenta </span><span>Crear una Cuenta</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+
+                    <label  for="reg-log"></label>
+
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3 text-white"> Iniciar Sesión</h4>
+                                        <div class="form-group">
+                                            <input type="email" name="logemail" class="form-style"
+                                                placeholder="Your Email" id="logemail" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="logpass" class="form-style"
+                                                placeholder="Your Password" id="logpass" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <a href="/home" class="btn mt-4">Login</a>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">¿Has olvidado tu contraseña?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3 text-white">¿Como Quieres Registrarte? </h4>
+                                        
+                                        <a href="api/usuarios/new" class="btn mt-4">Registrarse como Usuario</a>
+                                        <a  href="api/cuidadores/new" class="btn mt-4">Registrarse como Cuidador</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
