@@ -10,16 +10,14 @@
     margin: 10px 0 0 0;
     border-radius: 5px;
 }
+*/
 
 #btnEnviar{
-    background-color: lightskyblue;
-    color: white;
-    padding: 10px 35px;
-    margin: 10px;
-} */
-
-
-
+    margin: 10px 0 0 0;
+}
+input{
+    text-align: center;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
