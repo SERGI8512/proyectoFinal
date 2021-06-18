@@ -32,12 +32,25 @@
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+
+
+  
+    position: absolute; 
+    right: 15%;
+    top: 50px; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
 }
 
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+
 } 
 .carousel-item > img {
   position: absolute;
