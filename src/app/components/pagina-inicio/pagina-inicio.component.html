@@ -1,151 +1,174 @@
 <script src="inicio.js"></script>
 
 
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
-            aria-current="true"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="responsive-img" width="100%" height="100%"
-                src="../../../assets/images/Captura de pantalla 2021-06-10 a las 18.07.58.png" aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
+<!-- <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style> -->
 
 
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1 id="vienen">ELLOS TAMBIÉN VIENEN</h1>
-                    <p id="pVienen">Encuentra un cuidador para tu mascota</p>
-                    <p id="pVienen2">cerca de tu destino vacacional.</p>
-                    <p><a id="btnVais" class="btn btn-lg btn-primary" href="/dondeVais">A dónde vais?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-
-            <img class="bd-placeholder-img" width="100%" height="100%"
-                src="https://images.unsplash.com/photo-1611234563814-b374822165d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80" alt="">
+<!-- Custom styles for this template -->
 
 
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1 id="hSlide2">No sabéis dónde ir de vaciones con vuestras moscotas? Te proponemos algunos
-                        destinos.</h1>
-                    <p><a class="btn btn-lg btn-primary" href="/destinos">Destinos</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
+<main>
 
-            <img class="bd-placeholder-img" width="100%" height="100%"
-                src="https://www.bbva.com/wp-content/uploads/2020/11/FotoMascotasSeguro-1920x733.jpg" alt="">
+	<div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="bd-placeholder-img" width="100%" height="100%"
+					src="../../../assets/images/Captura de pantalla 2021-06-10 a las 18.07.58.png" aria-hidden="true"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+
+				<div class="container">
+					<div class="carousel-caption text-black">
+						<h1>ELLOS TAMBIÉN VIENEN</h1>
+						<p>Encuentra un cuidador para tu mascota</p>
+						<p>cerca de tu destino vacacional.</p>
+						<p><a class="btn btn-lg btn-primary" href="/dondeVais">A dónde vais?</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<rect width="100%" height="100%" fill="#777" />
+				</svg>
+
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="text-black">Another example headline.</h1>
+						<p class="text-black">Some representative placeholder content for the second slide of the
+							carousel.</p>
+						<p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<rect width="100%" height="100%" fill="#777" />
+				</svg>
+
+				<div class="container">
+					<div class="carousel-caption text-end">
+						<h1>One more for good measure.</h1>
+						<p>Some representative placeholder content for the third slide of this carousel.</p>
+						<p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
 
 
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1 id="unete">Únete a nuestra família</h1>
-                    <p></p>
-                    <p><a id="btnUnete" class="btn btn-lg btn-primary" href="/login">Regístrate</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+	<!-- Marketing messaging and featurettes
+  ================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+
+	<div class="container marketing">
+
+		<!-- Three columns of text below the carousel -->
 
 
 
+		<!-- START THE FEATURETTES -->
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Llega la hora de partir de viaje <span class="text-muted">y, por unos motivos
+						u otros, vuestro amigo peludo, a pesar de que os encantaría, no puede irse con vosotros a ese hotel
+						tan bueno</span></h2>
+
+			</div>
+
+			<div class="col-md-5">
+				<img class="col-12" fill="#eee" src="../../../assets/images/perro.jpg">
+			</div>
+
+		</div>
+
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7 order-md-2">
+				<h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+				<p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+					layout
+					would work with some actual real-world content in place.</p>
+			</div>
+			<div class="col-md-5 order-md-1">
+				<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+					height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+				</svg>
+
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+				<p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+					intended to
+					be actually read, simply here to give you a better view of what this would look like with some actual content.
+					Your content.</p>
+			</div>
+			<div class="col-md-5">
+				<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+					height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+				</svg>
+
+			</div>
+		</div>
 
 
 
+		<hr class="featurette-divider">
+
+		<!-- /END THE FEATURETTES -->
+
+	</div><!-- /.container -->
 
 
+	<!-- FOOTER -->
+	<footer class="container">
+		<p class="float-end"><a href="#">Back to top</a></p>
+		<p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	</footer>
+</main>
 
 
-
-<!-- Inicio contenedor del parallax -->
-    
-
-    <div>
-    
-                <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Llega la hora de partir de viaje <span class="text-muted">y, por unos motivos u otros, vuestro amigo peludo, a pesar de que os encantaría, no puede irse con vosotros a ese hotel tan bueno</span></h2>
-                
-                   </div>
-
-                    <div class="col-md-5">
-                        <img class="" width="400px" height="400px" fill="#eee" src="../../../assets/images/perro.jpg">
-                    </div>
-                   
-                   
-
-                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg> -->
-
-                
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                
-                <div class="col-sm-12 ">
-                    <img width="auto"  fill="#eee" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/08/cuidado-estas-son-seis-carreteras-donde-hay-perros-abandonados.jpg" alt="">
-                    
-                        <div class="col-8 .col-sm-6">
-                            <h2 class="featurette-heading"><span class="text-muted">En ese momento os planteáis la cuestión</span> ¿Dónde dejo a mi mascota? 
-                            <span class="text-muted">Algunos animales de compañía requieren más cuidados
-                            que otros; por ejemplo, un perro necesita salir a la calle varias veces al día pero, en cambio,  un canario solo precisa
-                             de comida, agua y limpieza de jaula. En cualquier caso, ninguno de ellos se puede quedar solo en  casa un período largo
-                             de tiempo...</span></h2>
-                        </div>
-                   
-
-                </div>
-            </div>
-            
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">¡TE OFRECEMOS LA MEJOR SOLUCÍON A TU PROBLEMA! <span class="text-muted">En (nombre de la web) te facilitamos la ubicación de cuidadores de todo tipo de animales cerca de tu destino de viaje, no tendrás que dejar sola a tu mascota en casa!</span></h2>
-                  
-                </div>
-                <div class="col-md-5">
-                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee">  </rect><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em"> </text>
-                    </svg> -->
-                    
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/encontrar-personas.jpg" alt="">
-                    
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-</div>
-
-    
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
