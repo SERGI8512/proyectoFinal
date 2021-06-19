@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'api/usuarios/new', component: FormularioUsuariosComponent },
   { path: 'api/cuidadores/new', component: FormularioCuidadoresComponent },
   { path: 'destinos', component: DestinosComponent },
-  { path: 'login', component: LogInComponent },
+  { path: 'api/usuarios/login', component: LogInComponent },
   { path: 'login/cuidadores', component: FormularioLogInComponent },
   { path: 'login/usuarios', component: FormularioLogInComponent },
   { path: 'dondeVais', component: DondeVaisComponent },

@@ -5,7 +5,7 @@ import { usuario } from '../interfaces/usuario.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class UsuariosService {
+export class ClientesService {
 
   baseUrl: string;
 
@@ -14,16 +14,7 @@ export class UsuariosService {
   }
 
   getAllUsuarios(): Promise<usuario[]> {
-    return this.httpClient.get<usuario[]>(`${this.baseUrl}/api/usuarios`).toPromise();
-  }
-
-  logIn(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/api/usuarios/login`, formsValue).toPromise();
-  }
-
-
-  newUsuario(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/api/usuarios/new`, formsValue).toPromise();
+    return this.httpClient.get<usuario[]>(`${this.baseUrl}/api/clientes`).toPromise();
   }
 
 }

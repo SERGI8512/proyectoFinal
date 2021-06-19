@@ -1,0 +1,57 @@
+.titulo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    width: auto;
+    margin-top: 10px;
+    padding: 30px;
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+}
+
+.usuarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#btnPerfilCompleto{
+    background-color: lightseagreen;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    border: 3px solid lightseagreen;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+}
+
+.usuario{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid lightseagreen;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.paginado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btnMascotas{
+    margin: 20px 20px 0 0;
+}
+
+.btnCuidadores{
+    margin: 20px 0 0 20px;
+}
