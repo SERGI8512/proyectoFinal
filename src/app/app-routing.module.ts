@@ -14,7 +14,7 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { DondeVaisComponent } from './components/donde-vais/donde-vais.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { PerfilUsuarioComponent } from './components/Perfiles/perfil-usuario/perfil-usuario.component';
+import { PerfilClienteComponent } from './components/Perfiles/perfil-cliente/perfil-cliente.component';
 import { PerfilCuidadorComponent } from './components/Perfiles/perfil-cuidador/perfil-cuidador.component';
 import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/perfil-mascota.component';
 
@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'api/cuidadores', component: CuidadoresComponent },
   { path: 'api/mascotas', component: MascotasComponent },
   { path: 'api/mascotas/new', component: FormularioMascotasComponent },
-  { path: 'api/usuarios/new', component: FormularioUsuariosComponent },
+  { path: 'api/usuarios/newCliente', component: FormularioUsuariosComponent },
   { path: 'api/cuidadores/new', component: FormularioCuidadoresComponent },
   { path: 'destinos', component: DestinosComponent },
   { path: 'api/usuarios/login', component: LogInComponent },
@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: 'dondeVais', component: DondeVaisComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'aboutUs', component: AboutUsComponent },
-  { path: 'api/usuarios/perfil', component: PerfilUsuarioComponent },
+  { path: 'api/usuarios/perfil', component: PerfilClienteComponent },
   { path: 'api/cuidadores/perfil', component: PerfilCuidadorComponent },
   { path: 'api/mascotas/perfil', component: PerfilMascotaComponent },
   { path: '**', redirectTo: '/home' }

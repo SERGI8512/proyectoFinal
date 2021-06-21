@@ -1,9 +1,9 @@
 <div id="section" class="section">
     <div class="container">
 
-        <div class="col-12 text-center align-self-center py-2">
+        <div class="col-6 text-center align-self-center py-2">
             <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                <h6 class="mb-0 pb-3"><span>Ya tengo cuenta </span><span>Crear una Cuenta</span></h6>
+                <h6 class="mb-0 pb-3"><span>Ya soy cliente </span><span>Ya soy cuidador</span></h6>
                 <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
 
                 <label for="reg-log"></label>
@@ -13,8 +13,8 @@
                         <div class="card-front">
                             <div class="center-wrap">
                                 <div class="section text-center">
-                                    <h4 class="mb-4 pb-3 text-white"> Iniciar Sesión</h4>
-                                    <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+                                    <h4 class="mb-4 pb-3 text-white"> Iniciar Sesión Como Cliente</h4>
+                                    <form [formGroup]="logInFormCliente" (ngSubmit)="onSubmitCliente()">
                                         <div class="form-group">
                                             <input type="email" name="logemail" class="form-style"
                                                 placeholder="Introduce tu email" id="logemail" autocomplete="off"
@@ -39,6 +39,57 @@
                         <div class="card-back">
                             <div class="center-wrap">
                                 <div class="section text-center">
+                                    <h4 class="mb-4 pb-3 text-white">Iniciar Sesión Como Cuidador</h4>
+
+                                    <form [formGroup]="logInFormCuidador" (ngSubmit)="onSubmitCuidador()">
+                                        <div class="form-group">
+                                            <input type="email" name="logemail" class="form-style"
+                                                placeholder="Introduce tu email" id="logemail" autocomplete="off"
+                                                formControlName="email">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="logpass" class="form-style"
+                                                placeholder="Introduce tu Password" id="logpass" autocomplete="off"
+                                                formControlName="password">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <button href="/api/usuarios" id="btnEnviar" class="btn mt-4">LogIn</button>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 text-center align-self-center py-2">
+            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <h4 class="mb-0 pb-3"><span>¿Todavía no tienes una cuenta?</span></h4>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+
+
+
+                <div class="card-3d-wrap mx-auto">
+                    <div class="card-3d-wrapper">
+                        <div class="card-front">
+                            <div class="center-wrap">
+                                <div class="section text-center">
+                                    <h4 class="mb-4 pb-3 text-white">¿Como Quieres Registrarte? </h4>
+
+                                    <a href="api/usuarios/newCliente" class="btn mt-4">Registrarse como Usuario</a>
+                                    <a href="api/cuidadores/new" class="btn mt-4">Registrarse como Cuidador</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="center-wrap">
+                                <div class="section text-center">
                                     <h4 class="mb-4 pb-3 text-white">¿Como Quieres Registrarte? </h4>
 
                                     <a href="api/usuarios/new" class="btn mt-4">Registrarse como Usuario</a>
@@ -50,6 +101,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>

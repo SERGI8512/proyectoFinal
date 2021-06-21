@@ -14,12 +14,17 @@ declare var Swal;
 })
 export class LogInComponent implements OnInit {
 
-  logInForm: FormGroup;
+  logInFormCliente: FormGroup;
+  logInFormCuidador: FormGroup;
 
   router: Router;
 
   constructor(private usuariosService: UsuariosService) {
-    this.logInForm = new FormGroup({
+    this.logInFormCliente = new FormGroup({
+      email: new FormControl,
+      password: new FormControl
+    })
+    this.logInFormCuidador = new FormGroup({
       email: new FormControl,
       password: new FormControl
     })
@@ -28,8 +33,18 @@ export class LogInComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  async onSubmit() {
-    const response = await this.usuariosService.logIn(this.logInForm.value);
+  async onSubmitCliente() {
+    const response = await this.usuariosService.logInCliente(this.logInFormCliente.value);
+
+    if (response['effectedRows'] === 1) {
+      Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
+      this.router;
+    }
+    console.log(response);
+
+  }
+  async onSubmitCuidador() {
+    const response = await this.usuariosService.logInCuidador(this.logInFormCliente.value);
 
     if (response['effectedRows'] === 1) {
       Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
