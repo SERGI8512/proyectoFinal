@@ -11,15 +11,29 @@
 </div>
 <div class="usuarios">
     <div class="usuario" *ngFor="let usuario of arrUsuarios">
-        <div class="btnUsuarios">
-            <p><a id="btnPerfilCompleto" class="btn btn-lg btn-primary" href="api/usuarios">Perfil Completo</a></p>
-        </div>
-        <h4>{{usuario.nombre}} {{usuario.apellidos}}</h4>
-        <h5>ID: {{usuario.id}}</h5>
-        <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt="">
-        <h6>{{usuario.genero}} ({{usuario.edad}} años)</h6>
-        <h6>Teléfono: {{usuario.telefono}}</h6>
-        <h6>Dirección: {{usuario.direccion}}</h6>
+           
+        <section class="team" style="margin-bottom: 400px;">
+            <div class="container">
+                <div class="profile"><h5 class="usuarioNombre">{{usuario.nombre}} </h5>
+                    <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt="">  
+                    <span class="name">
+                        <h6>
+                            {{usuario.edad}} años
+                        </h6>
+                       <h6>
+                           Provincia
+                       </h6>
+                </span>                      
+                 </div>
+            </div>
+        </section>
+        
+            
+        
 
     </div>
 </div>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet" />
