@@ -25,8 +25,12 @@ export class UsuariosService {
   }
 
 
-  newUsuario(formsValue) {
+  newCliente(formsValue) {
     return this.httpClient.post(`${this.baseUrl}/api/usuarios/newCliente`, formsValue).toPromise();
+  }
+
+  newCuidador(formsValue) {
+    return this.httpClient.post(`${this.baseUrl}/api/usuarios/newCuidador`, formsValue).toPromise();
   }
 
 }

@@ -33,7 +33,7 @@ export class FormularioUsuariosComponent implements OnInit {
   }
 
   async onSubmit() {
-    const response = await this.usuariosService.newUsuario(this.newUsuarioForm.value);
+    const response = await this.usuariosService.newCliente(this.newUsuarioForm.value);
     if (response['effectedRows'] === 1) {
       Swal.fire('Usuario Insertado');
       this.newUsuarioForm.reset();

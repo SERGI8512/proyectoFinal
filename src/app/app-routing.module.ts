@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'api/mascotas', component: MascotasComponent },
   { path: 'api/mascotas/new', component: FormularioMascotasComponent },
   { path: 'api/usuarios/newCliente', component: FormularioUsuariosComponent },
-  { path: 'api/cuidadores/new', component: FormularioCuidadoresComponent },
+  { path: 'api/usuarios/newCuidador', component: FormularioCuidadoresComponent },
   { path: 'destinos', component: DestinosComponent },
   { path: 'api/usuarios/login', component: LogInComponent },
   { path: 'login/cuidadores', component: FormularioLogInComponent },
@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: 'dondeVais', component: DondeVaisComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'aboutUs', component: AboutUsComponent },
-  { path: 'api/usuarios/perfil', component: PerfilClienteComponent },
+  { path: 'api/clientes/perfil', component: PerfilClienteComponent },
   { path: 'api/cuidadores/perfil', component: PerfilCuidadorComponent },
   { path: 'api/mascotas/perfil', component: PerfilMascotaComponent },
   { path: '**', redirectTo: '/home' }

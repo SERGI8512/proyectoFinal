@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CuidadoresService } from 'src/app/services/cuidadores.service';
+import { UsuariosService } from 'src/app/services/usuarios.service';
 
 declare var Swal;
 
@@ -17,7 +18,7 @@ export class FormularioCuidadoresComponent implements OnInit {
   //PREGUNTAR PORQUE PONEMOS ROUTER AQUÍ.
   router: Router;
 
-  constructor(private cuidadoresService: CuidadoresService) {
+  constructor(private usuariosService: UsuariosService) {
     this.newCuidadorForm = new FormGroup({
       nombre: new FormControl,
       apellido: new FormControl,
@@ -37,7 +38,7 @@ export class FormularioCuidadoresComponent implements OnInit {
   }
 
   async onSubmit() {
-    const response = await this.cuidadoresService.newCuidador(this.newCuidadorForm.value);
+    const response = await this.usuariosService.newCuidador(this.newCuidadorForm.value);
     console.log(response);
 
     if (response['effectedRows'] === 1) {
