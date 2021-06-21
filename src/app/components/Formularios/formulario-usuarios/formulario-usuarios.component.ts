@@ -35,8 +35,11 @@ export class FormularioUsuariosComponent implements OnInit {
   async onSubmit() {
     const response = await this.usuariosService.newUsuario(this.newUsuarioForm.value);
     if (response['effectedRows'] === 1) {
-      Swal.fire('Usuario Insertado', 'Se ha creado un nuevo usuario', 'succes');
-      this.router;
+      Swal.fire('Usuario Insertado');
+      this.newUsuarioForm.reset();
+    }
+    if (response['error']) {
+      Swal.fire('Error en el registro!', response['error'], 'error')
     }
   }
 

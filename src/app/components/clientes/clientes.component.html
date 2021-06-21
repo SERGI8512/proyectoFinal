@@ -1,0 +1,25 @@
+<div class="titulo">
+    <h1>Clientes Registrados</h1>
+</div>
+<div class="paginado">
+    <div class="btnMascotas">
+        <p><a class="btn btn-lg btn-primary" href="api/mascotas">Ver Mascotas</a></p>
+    </div>
+    <div class="btnCuidadores">
+        <p><a class="btn btn-lg btn-primary" href="api/cuidadores">Ver Cuidadores</a></p>
+    </div>
+</div>
+<div class="usuarios">
+    <div class="usuario" *ngFor="let usuario of arrUsuarios">
+        <div class="btnUsuarios">
+            <p><a id="btnPerfilCompleto" class="btn btn-lg btn-primary" href="api/usuarios">Perfil Completo</a></p>
+        </div>
+        <h4>{{usuario.nombre}} {{usuario.apellidos}}</h4>
+        <h5>ID: {{usuario.id}}</h5>
+        <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt="">
+        <h6>{{usuario.genero}} ({{usuario.edad}} años)</h6>
+        <h6>Teléfono: {{usuario.telefono}}</h6>
+        <h6>Dirección: {{usuario.direccion}}</h6>
+
+    </div>
+</div>

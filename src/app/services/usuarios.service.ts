@@ -17,12 +17,16 @@ export class UsuariosService {
     return this.httpClient.get<usuario[]>(`${this.baseUrl}/api/usuarios`).toPromise();
   }
 
-  logIn(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/api/login`, formsValue).toPromise();
+  logInCliente(formsValue) {
+    return this.httpClient.post(`${this.baseUrl}/api/usuarios/loginCliente`, formsValue).toPromise();
+  }
+  logInCuidador(formsValue) {
+    return this.httpClient.post(`${this.baseUrl}/api/usuarios/loginCuidador`, formsValue).toPromise();
   }
 
+
   newUsuario(formsValue) {
-    return this.httpClient.post(`${this.baseUrl}/api/usuarios/new`, formsValue).toPromise();
+    return this.httpClient.post(`${this.baseUrl}/api/usuarios/newCliente`, formsValue).toPromise();
   }
 
 }
