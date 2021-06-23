@@ -53,7 +53,14 @@
         <div class="card-front">
 
             <div class="section text-center">
-                <h4 class="mb-4 pb-3 text-white"> Nuevo Cuidador</h4>
+                <div style="display: flex; justify-content: space-around;">
+                    <h3><a href="api/usuarios/newCliente" style="text-decoration: none; color: black;">Registro
+                            Usuario</a>
+                    </h3>
+                    <h3><a href="api/usuarios/newCuidador" style="text-decoration: none; color: #03e9f4;">Registro
+                            Cuidador</a>
+                    </h3>
+                </div>
 
                 <form [formGroup]="newCuidadorForm" (ngSubmit)="onSubmit()">
 

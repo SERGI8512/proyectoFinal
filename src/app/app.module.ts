@@ -25,6 +25,7 @@ import { PerfilClienteComponent } from './components/Perfiles/perfil-cliente/per
 import { PerfilCuidadorComponent } from './components/Perfiles/perfil-cuidador/perfil-cuidador.component';
 import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/perfil-mascota.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogInCuidadoresComponent } from './log-in-cuidadores/log-in-cuidadores.component';
 
 
 @NgModule({
@@ -47,8 +48,7 @@ import { FooterComponent } from './footer/footer.component';
     AboutUsComponent,
     PerfilClienteComponent,
     PerfilCuidadorComponent,
-    PerfilMascotaComponent,
-    FooterComponent
+    PerfilMascotaComponent
 
   ],
   imports: [

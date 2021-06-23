@@ -17,7 +17,10 @@
 }
 input{
     text-align: center;
+    background: transparent;
 }
+
+::placeholder { color: red; }
 
 
 
@@ -57,9 +60,7 @@ h6 span{
   font-weight: 700;
 }
 
-#section{
-       background: url(https://www.bbva.com/wp-content/uploads/2020/11/FotoMascotasSeguro-1920x733.jpg) no-repeat fixed center;
-}
+
 .section{
   position: relative;
   width: 100%;
@@ -135,10 +136,9 @@ h6 span{
   width: 100%;
   padding: 15px;
   height: auto;
-  background-color: #2a2b38;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-image: url('https://www.bbva.com/wp-content/uploads/2020/11/FotoMascotasSeguro-1920x733.jpg');
   background-position: bottom center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 300%;
   position: absolute;
   border-radius: 6px;

@@ -11,25 +11,27 @@
 </div>
 <div class="usuarios">
     <div class="usuario" *ngFor="let usuario of arrUsuarios">
-           
+
         <section class="team">
             <div class="container">
-                <div class="profile"><h5 class="usuarioNombre">{{usuario.nombre}} </h5>
-                    <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt="">  
+                <div class="profile">
+                    <h5 class="usuarioNombre">{{usuario.nombre}} </h5>
+                    <a href="api/clientes/perfil">
+                        <img src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt=""> </a>
                     <span class="name">
                         <h6>
                             {{usuario.edad}} años
                         </h6>
-                       <h6>
-                           Provincia
-                       </h6>
-                </span>                      
-                 </div>
+                        <h6>
+                            Provincia
+                        </h6>
+                    </span>
+                </div>
             </div>
         </section>
-        
-            
-        
+
+
+
 
     </div>
 </div>
