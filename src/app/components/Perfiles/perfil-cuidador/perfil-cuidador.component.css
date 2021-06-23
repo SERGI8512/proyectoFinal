@@ -2,3 +2,8 @@ h1{
 display: flex;
 justify-content: center;
 }
+
+img{
+    width: 24px;
+    height: 24px;
+}
