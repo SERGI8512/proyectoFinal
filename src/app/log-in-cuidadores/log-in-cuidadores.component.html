@@ -1,10 +1,10 @@
 <div class="login-box">
     <div style="display: flex; justify-content: space-around;">
-        <h3><a href="api/usuarios/login" style="text-decoration: none; color: #03e9f4;">Login Usuario</a></h3>
-        <h3><a href="api/usuarios/loginCuidadores" style="text-decoration: none; color: black;">Login Cuidadores</a>
+        <h3><a href="api/usuarios/login" style="text-decoration: none; color: black;">Login Usuario</a></h3>
+        <h3><a href="api/usuarios/loginCuidadores" style="text-decoration: none; color: #03e9f4;">Login Cuidadores</a>
         </h3>
     </div>
-    <form [formGroup]="logInFormCliente" (ngSubmit)="onSubmitCliente()">
+    <form [formGroup]="logInFormCuidador" (ngSubmit)="onSubmitCuidador()">
         <div class="user-box">
             <input type="email" name="" required="" formControlName="email">
             <label>Email</label>
