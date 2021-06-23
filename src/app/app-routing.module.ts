@@ -17,6 +17,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PerfilClienteComponent } from './components/Perfiles/perfil-cliente/perfil-cliente.component';
 import { PerfilCuidadorComponent } from './components/Perfiles/perfil-cuidador/perfil-cuidador.component';
 import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/perfil-mascota.component';
+import { LogInCuidadoresComponent } from './log-in-cuidadores/log-in-cuidadores.component';
 
 const routes: Routes = [
   { path: 'home', component: PaginaInicioComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'api/usuarios/newCuidador', component: FormularioCuidadoresComponent },
   { path: 'destinos', component: DestinosComponent },
   { path: 'api/usuarios/login', component: LogInComponent },
+  { path: 'api/usuarios/loginCuidadores', component: LogInCuidadoresComponent },
   { path: 'login/cuidadores', component: FormularioLogInComponent },
   { path: 'login/usuarios', component: FormularioLogInComponent },
   { path: 'dondeVais', component: DondeVaisComponent },

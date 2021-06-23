@@ -24,6 +24,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PerfilClienteComponent } from './components/Perfiles/perfil-cliente/perfil-cliente.component';
 import { PerfilCuidadorComponent } from './components/Perfiles/perfil-cuidador/perfil-cuidador.component';
 import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/perfil-mascota.component';
+import { LogInCuidadoresComponent } from './log-in-cuidadores/log-in-cuidadores.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { PerfilMascotaComponent } from './components/Perfiles/perfil-mascota/per
     AboutUsComponent,
     PerfilClienteComponent,
     PerfilCuidadorComponent,
-    PerfilMascotaComponent
+    PerfilMascotaComponent,
+    LogInCuidadoresComponent
 
   ],
   imports: [
