@@ -10,24 +10,24 @@ body {
   color: #10996d;
   white-space: nowrap;
   
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.3em;
+  font-size: 2.0em;
   font-family: sans-serif;
   letter-spacing: 0.1em;
   transition: 0.3s;
-  text-shadow: 1px 1px 0 rgb(38, 126, 78), 1px 2px 0 rgb(255, 255, 255), 1px 3px 0 grey, 1px 4px 0 grey,
-    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
-    5px 13px 15px black;
+  text-shadow: 1px 1px 0 rgb(38, 126, 78), 1px 2px 0 rgb(38, 126, 78), 1px 3px 0 rgb(38, 126, 78), 1px 4px 0 rgb(38, 126, 78),
+    1px 5px 0 rgb(38, 126, 78), 1px 6px 0 rgb(46, 200, 85), 1px 7px 0 rgb(46, 200, 85), 1px 8px 0 rgb(46, 200, 85),
+    0px 5px 5px rgb(2, 255, 32);
 }
 
 #threeD:hover{
-  transition: 0.5s;
-  transform: scale(1.1)translate(-50%, -50%);
-  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
-    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
-    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+  transition: 0.3s;
+  transform: scale(1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 rgb(38, 126, 78), 1px -2px 0 rgb(38, 126, 78), 1px -3px rgb(38, 126, 78),
+    1px -4px 0 rgb(38, 126, 78), 1px -5px 0 rgb(38, 126, 78), 1px -6px 0 rgb(46, 200, 85), 1px -7px 0 rgb(46, 200, 85),
+    1px -8px 0 rgb(46, 200, 85), 5px -13px 15px rgb(46, 200, 85), 5px -13px 25px #0bff34;
 }
 
 
@@ -72,7 +72,7 @@ h1{
 img{
     width: 150px;
     height: auto;
-    border: 3px solid lightseagreen;
+    border: 3px solid rgb(17, 121, 34);
     border-radius: 50%;
     margin: 0 0 20px 0;
 }
@@ -82,7 +82,7 @@ img{
     height: auto;
     
     margin: 10px;
-    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.368));
+    filter: drop-shadow(-20px 0 10px rgba(25, 224, 75, 0.368));
  
     text-align: center;
 }
@@ -130,7 +130,7 @@ img{
   .profile img {
     max-width: 100%;
     border-radius: 50%;
-    border: 5px solid #f7f7f7;
+    border: 5px solid rgb(38, 126, 78);
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     cursor: pointer;
   }
@@ -167,7 +167,7 @@ img{
   .profile img:hover + .name{
     opacity: 1;
     transform: translateX(-50%);
-    box-shadow: 0 10px 20px rgba(45, 198, 89, 0.604);
+    box-shadow: 0 10px 20px rgba(48, 176, 85, 0.604);
     
 
   }
