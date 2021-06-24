@@ -1,90 +1,18 @@
-.px-3 {
-box-shadow:inset 1px -1px 4px 1px rgb(103, 101, 101);
-
-
+h1{
+display: flex;
+justify-content: center;
 }
-
-
-  
-
-
-
-a{
-    justify-content: space-around;
-   
-    margin: 0px 10px 0px 10px;
+img{
+    width: 24px;
+    height: 24px;
 }
-
-.logo{
- position: absolute;
- margin: 2px 0 0px 5px;
- height: 60px;
-
-}
-
-#botones{
- align-items: center;
- justify-content: center;
- padding: 10px 16px 0px 16px;
- height: 60px;
-}
-
-
-.svg{
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: center;
-}
-.contenedorNav{
-    margin: 0 0 0 0;
-    height: 1px;
-}
-
-.conatiner{
-    width: 70%;
-    height: auto;
-}
-
-.contenedorLi{
-    width: auto ;
-    height: 50%;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7f7f7;
-  }
-  
-  .section-heading {
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    font-size: 64px;
-    color: #10996d;
-    margin: 10px 0 70px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  
   .profile {
     position: relative;
-    transition: all 0.2s;
+    transition: all 0.3s;
   }
-  
   .profile:hover {
     transform: translateY(7px);
-    
   }
-  
   .profile img {
     max-width: 100%;
     border-radius: 50%;
@@ -92,11 +20,9 @@ body {
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     cursor: pointer;
   }
-
   .profile:not(:first-child) img {
     margin-left: -20px;
   }
-  
   .profile .name {
     position: absolute;
     background-color: #10996d;
@@ -110,9 +36,8 @@ body {
     letter-spacing: 1px;
     font-size: 20px;
     opacity: 0;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
-  
   .profile .name::before {
     content: "";
     position: absolute;
@@ -121,18 +46,8 @@ body {
     top: 0; left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  
   .profile img:hover + .name {
     opacity: 1;
     transform: translateX(-50%);
     box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
   }
-
-
-
-
-
-
-
-
- 

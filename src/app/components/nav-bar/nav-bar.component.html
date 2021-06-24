@@ -1,236 +1,83 @@
-<div id="navBar" class="sticky-top px-3 py-1 bg-dark text-white ">
-    <!-- fixed-top clase para que se quede arriba el nav-bar -->
-    <div class="logo">
-        <img class="logo" src="assets/images/iconfinder-icon.svg" sizes="300x300" alt="">
-    </div>
-
-    <div class="container">
-
-        <div class="d-flex flex-row-reverse align-items-center justify-content-center justify-content-lg-start">
-
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <div class="row">
-
-                </div>
-
-                <section class="team">
-
-
-                    <div class="profile">
-                        <li>
-                            <div class="contenedorNav">
-                                <a id="destinos" href="#" class="nav-link text-white btn btn-dark">
-
-                                    <div class="svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <p>
-                                            Home
-                                        </p>
-
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
-
-
-                    </div>
-
-                </section>
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <div class="contenedorLi">
-                                <a id="destinos" href="/destinos" class="nav-link text-white btn btn-dark  ">
-                                    <div class="botonesNavBar">
-                                        <div class="svg">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
-                                            </svg>
-                                        </div>
-
-                                        <div>
-                                            <p>Destinos</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-
-                        </li>
-
-                    </div>
-
-                </section>
-
-
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <a href="/dondeVais" class="nav-link text-white btn btn-dark">
-                                <div class="botonesNavBar">
-                                    <div class="svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                                            <path
-                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p>A donde vais?</p>
-                                    </div>
-
-
-                                </div>
-
-                            </a>
-                        </li>
-
-
-                    </div>
-
-                </section>
-
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <a href="/api/cuidadores" class="nav-link text-white btn btn-dark">
-                                <div class="botonesNavBar">
-                                    <div class="svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                                            <path
-                                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p> Cuidadores </p>
-                                    </div>
-
-
-                                </div>
-
-                            </a>
-                        </li>
-
-                    </div>
-
-                </section>
-
-
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <a href="/blog" class="nav-link text-white btn btn-dark">
-                                <div class="botonesNavBar">
-                                    <div class="svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z" />
-                                            <path
-                                                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                                            <path
-                                                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p> Blog </p>
-                                    </div>
-
-
-                                </div>
-
-                            </a>
-                        </li>
-
-                    </div>
-
-                </section>
-
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <a href="/aboutUs" class="nav-link text-white btn btn-dark">
-                                <div class="botonesNavBar">
-                                    <div class="svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
-                                            <path
-                                                d="m10.277 5.433-4.031.505-.145.67.794.145c.516.123.619.309.505.824L6.101 13.68c-.34 1.578.186 2.32 1.423 2.32.959 0 2.072-.443 2.577-1.052l.155-.732c-.35.31-.866.434-1.206.434-.485 0-.66-.34-.536-.939l1.763-8.278zm.122-3.673a1.76 1.76 0 1 1-3.52 0 1.76 1.76 0 0 1 3.52 0z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p>About Us?</p>
-                                    </div>
-
-
-                                </div>
-
-
-
-                            </a>
-                        </li>
-
-                    </div>
-
-                </section>
-
-                <section class="team">
-                    <div class="profile">
-                        <li>
-                            <a href="api/usuarios/login" class="nav-link text-white btn btn-dark">
-                                <div class="botonesNavBar">
-                                    <button type="button" class="btn btn-light text-dark me-lg-auto">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
-                                            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>Login</button>
-                                </div>
-
-
-
-
-                            </a>
-                        </li>
-
-                    </div>
-
-                </section>
-               
-                
-
-
-
-
-
-            </ul>
-
-        </div>
-    </div>
-</div>
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap"
-    rel="stylesheet" />
-
+<link href="./nav-bar.component.css" rel="stylesheet">
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 626px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
     
+
+
+</style>
+<main>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col collapse navbar-collapse" id="navbarsExample03" style="justify-content: center;">
+                <li id="img" class=".col-auto .mr-auto" style="position: relative; width: auto; height: auto;text-align: center;" >
+                        <a style="width: auto; height: auto;" aria-current="page" href="#"><img style="width: auto; height: auto; margin-top: 10px;"
+                                src="../../../../assets/images/iconfinder-icon.svg" alt=""></a>
+                </li>
+                <ul class="navbar-nav mb-2 mb-sm-0">
+                    
+                    <div class="profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </div>
+                    <div class="profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/destinos">Destinos</a>
+                        </li>
+                    </div>
+                    <div class="profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/dondeVais">¿DóndeVais?</a>
+                        </li>
+                    </div>
+                    <div class="profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/api/cuidadores">Cuidadores</a>
+                        </li>
+                    </div>
+                    <div class="profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                        </li>
+                    </div>
+                    <div class="profile">
+                    </div>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/aboutUs">About Us</a>
+                    </li> -->
+                    <!--  <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/api/usuarios/login">LogIn</a>
+                    </li> -->
+                    
+                </ul>
+
+                <li style=" " class=" navbar-nav mb-5 mb-sm-0 nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/api/usuarios/login" id="dropdown03" data-bs-toggle="dropdown"
+                        aria-expanded="false">LogIn</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                        <li><a class="dropdown-item" href="/api/usuarios/login">¿Ya Tienes una Cuenta?</a></li>
+                        <li><a class="dropdown-item" href="/api/usuarios/newCliente">Crear una Cuenta</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
