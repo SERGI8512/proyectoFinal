@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CuidadoresService } from 'src/app/services/cuidadores.service';
 import { UsuariosService } from 'src/app/services/usuarios.service';
+import { logIn } from 'src/app/interfaces/logIn.interface'
 
 declare var Swal;
 
@@ -30,6 +31,8 @@ export class LogInComponent implements OnInit {
     })
   }
 
+
+
   ngOnInit(): void {
   }
 
@@ -48,9 +51,13 @@ export class LogInComponent implements OnInit {
 
     if (response['effectedRows'] === 1) {
       Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
+      // localStorage.setItem(JSON.stringify(response));
       this.router;
     }
+
     console.log(response);
+
+
 
   }
 

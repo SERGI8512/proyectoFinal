@@ -13,17 +13,14 @@ import { MascotasService } from 'src/app/services/mascotas.service';
 export class PerfilClienteComponent implements OnInit {
 
   cliente: cliente;
-  mascota: mascota;
+  mascotas: mascota[];
 
   constructor(private clienteService: ClientesService, private mascotasService: MascotasService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(async params => {
       console.log(params);
-
       this.cliente = await this.clienteService.getClienteById(params.pClienteId);
-
-
     });
   }
 
