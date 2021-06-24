@@ -9,6 +9,7 @@ export class CuidadoresService {
 
   baseUrl: string;
 
+
   constructor(private httpClient: HttpClient) {
     this.baseUrl = 'http://localhost:3000'
   }
@@ -24,4 +25,9 @@ export class CuidadoresService {
   newCuidador(formsValue) {
     return this.httpClient.post(`${this.baseUrl}/api/cuidadores/new`, formsValue).toPromise();
   }
+
+  getCuidadorById(pCuidadorId): Promise<cuidador> {
+    return this.httpClient.get<cuidador>(`${this.baseUrl}/api/cuidadores/${pCuidadorId}`).toPromise();
+  }
+
 }

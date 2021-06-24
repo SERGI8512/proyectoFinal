@@ -35,8 +35,8 @@ const routes: Routes = [
   { path: 'dondeVais', component: DondeVaisComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'aboutUs', component: AboutUsComponent },
-  { path: 'api/clientes/perfil', component: PerfilClienteComponent },
-  { path: 'api/cuidadores/perfil', component: PerfilCuidadorComponent },
+  { path: 'api/clientes/:pClienteId', component: PerfilClienteComponent },
+  { path: 'api/cuidadores/:pCuidadorId', component: PerfilCuidadorComponent },
   { path: 'api/mascotas/perfil', component: PerfilMascotaComponent },
   { path: '**', redirectTo: '/home' }
 ];

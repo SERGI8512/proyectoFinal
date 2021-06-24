@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { usuario } from '../interfaces/usuario.interface';
+import { cliente } from '../interfaces/cliente.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +13,12 @@ export class ClientesService {
     this.baseUrl = 'http://localhost:3000'
   }
 
-  getAllUsuarios(): Promise<usuario[]> {
-    return this.httpClient.get<usuario[]>(`${this.baseUrl}/api/clientes`).toPromise();
+  getAllUsuarios(): Promise<cliente[]> {
+    return this.httpClient.get<cliente[]>(`${this.baseUrl}/api/clientes`).toPromise();
+  }
+
+  getClienteById(pClienteId): Promise<cliente> {
+    return this.httpClient.get<cliente>(`${this.baseUrl}/api/clientes/${pClienteId}`).toPromise();
   }
 
 }

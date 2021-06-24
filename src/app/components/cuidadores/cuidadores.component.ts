@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { cuidador } from 'src/app/interfaces/cuidador.interface';
 import { CuidadoresService } from 'src/app/services/cuidadores.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cuidadores',
@@ -9,16 +10,20 @@ import { CuidadoresService } from 'src/app/services/cuidadores.service';
 })
 export class CuidadoresComponent implements OnInit {
 
-  arrCuidadores: cuidador[];
+  arrCuidadores: any;
 
-  constructor(private CuidadoresService: CuidadoresService) { }
+  constructor(private CuidadoresService: CuidadoresService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
 
     this.CuidadoresService.getAllCuidadores()
       .then(response => this.arrCuidadores = response)
       .catch((error) => console.log(error));
-    console.log(this.arrCuidadores);
+
+  }
+
+  onClick() {
+
   }
 
 }

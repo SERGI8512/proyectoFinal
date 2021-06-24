@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientesService } from 'src/app/services/clientes.service';
-import { usuario } from 'src/app/interfaces/usuario.interface';
+import { cliente } from 'src/app/interfaces/cliente.interface';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { usuario } from 'src/app/interfaces/usuario.interface';
 })
 export class ClientesComponent implements OnInit {
 
-  arrUsuarios: usuario[];
+  arrUsuarios: cliente[];
 
   constructor(private ClientesService: ClientesService) { }
 
