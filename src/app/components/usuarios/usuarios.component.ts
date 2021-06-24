@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { usuario } from 'src/app/interfaces/usuario.interface';
+import { cliente } from 'src/app/interfaces/cliente.interface';
 import { UsuariosService } from 'src/app/services/usuarios.service';
+
 
 @Component({
   selector: 'app-usuarios',
@@ -9,7 +10,8 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 })
 export class UsuariosComponent implements OnInit {
 
-  arrUsuarios: usuario[];
+  arrUsuarios: cliente[];
+
 
   constructor(private UsuariosService: UsuariosService) { }
 
@@ -18,5 +20,7 @@ export class UsuariosComponent implements OnInit {
       .then(response => this.arrUsuarios = response)
       .catch((error) => console.log(error));
   }
+
+
 
 }

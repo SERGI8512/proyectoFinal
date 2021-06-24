@@ -1,72 +1,141 @@
-<link href="./perfil-cuidador.component.css" rel="stylesheet">
-<style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
+<div class="container">
+    <div class="main-body">
+        <div class="row gutters-sm">
+            <div class="col-md-12 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png"
+                                alt="Admin" class="rounded-circle" width="150">
+                            <div class="mt-3">
+                                <h4>{{cuidador?.nombre}} {{cuidador?.apellido}} ({{cuidador?.edad}} Años)</h4>
+                                <p class="text-secondary mb-1">{{cuidador?.telefono}} / {{cuidador?.email}}</p>
+                                <p class="text-secondary mb-1">{{cuidador?.direccion}}</p>
 
-    @media (min-width: 626px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-    }
-</style>
-<main>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                                <button id="btnEditProfile" class="btn btn-primary">Editar Perfil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Fotos de {{cuidador?.nombre}}</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png"
+                                alt="Admin" class="rounded-circle" width="350">
 
-            <div class="collapse navbar-collapse" id="navbarsExample03" style="justify-content: center;">
-                <ul class="navbar-nav mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><img
-                                src="../../../../assets/images/iconfinder-icon.svg" alt=""></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/destinos">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/dondeVais">¿A dónde Vays?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/api/cuidadores">Cuidadores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/aboutUs">About Us</a>
-                    </li> -->
-                    <!--  <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/api/usuarios/login">LogIn</a>
-                    </li> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png"
+                                alt="Admin" class="rounded-circle" width="350">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/api/usuarios/login" id="dropdown03"
-                            data-bs-toggle="dropdown" aria-expanded="false">LogIn</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item" href="/api/usuarios/login">¿Ya Tienes una Cuenta?</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../../../../assets/images/Captura de pantalla 2021-06-12 a las 1.04.06.png"
+                                alt="Admin" class="rounded-circle" width="350">
 
-                            <li><a class="dropdown-item" href="/api/usuarios/newCliente">Crear una Cuenta</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 class="mb-0" style="text-align: center;">Carlos89 </h6>
+                            </div>
 
+                        </div>
+                        <hr>
+                        <div class="row">
 
+                            <div class="col-sm-12 text-secondary">
+                                Sergi es un gran cuidador! Dejamos a Rufus con él durante una semana y todo fué genial.
+                                Recogimos a rufus 4 de los 7 días que estuvimos de vacaciones y a la hora de marcharnos
+                                no quería ni irse. Cuidador muy recomendado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 class="mb-0" style="text-align: center;">MariaParra</h6>
+                            </div>
 
-                        </ul>
-                    </li>
-                </ul>
+                        </div>
+                        <hr>
+                        <div class="row">
 
+                            <div class="col-sm-12 text-secondary">
+                                Lola pasa de la vida, siempre a su rollo. Le enconta tomar el sol hasta casi quemarse.
+                                Muy lametona y cariñosa. A veces
+                                puede engancharse con otra hembra.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 class="mb-0" style="text-align: center;">Ana32</h6>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+
+                            <div class="col-sm-12 text-secondary">
+                                Lola pasa de la vida, siempre a su rollo. Le enconta tomar el sol hasta casi quemarse.
+                                Muy lametona y cariñosa. A veces
+                                puede engancharse con otra hembra.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 class="mb-0" style="text-align: center;">MarcelinoIno</h6>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+
+                            <div class="col-sm-12 text-secondary">
+                                Lola pasa de la vida, siempre a su rollo. Le enconta tomar el sol hasta casi quemarse.
+                                Muy lametona y cariñosa. A veces
+                                puede engancharse con otra hembra.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</main>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</div>

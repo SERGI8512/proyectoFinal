@@ -15,7 +15,9 @@
         <!-- Aquí tenemos que mirar como condicionar la aparación del avatar predefino con el perfil según seá hombre o mujer -->
 
         <div class="containerBtn">
-            <p><a id="btnPerfilCompleto" class="btn btn-lg btn-primary" href="api/usuarios">Perfil Completo</a></p>
+            <p><a (click)="onClick()" id="btnPerfilCompleto" class="btn btn-lg btn-primary"
+                    [routerLink]="['/api','cuidadores',cuidador.id]">Perfil Completo</a>
+            </p>
         </div>
         <h4>{{cuidador.nombre}} {{cuidador.apellido}}</h4>
         <h5>ID: {{cuidador.id}}</h5>

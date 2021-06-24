@@ -5,5 +5,11 @@ export interface cuidador {
     experimentado: boolean,
     razasAdmitidas: string,
     latitude: number,
-    longitude: number
+    longitude: number,
+    edad: number,
+    direccion: string;
+    email: string,
+    telefono: string,
+    password: string
+
 }
