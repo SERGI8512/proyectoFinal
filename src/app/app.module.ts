@@ -48,7 +48,9 @@ import { LogInCuidadoresComponent } from './log-in-cuidadores/log-in-cuidadores.
     AboutUsComponent,
     PerfilClienteComponent,
     PerfilCuidadorComponent,
-    PerfilMascotaComponent
+    PerfilMascotaComponent,
+    FooterComponent,
+    LogInCuidadoresComponent
 
   ],
   imports: [
