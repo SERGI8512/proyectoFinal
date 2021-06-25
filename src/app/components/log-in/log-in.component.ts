@@ -7,6 +7,9 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 declare var Swal;
 
 
+const USER_INFO_KEY = 'getUserInfo';
+
+
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
@@ -30,6 +33,10 @@ export class LogInComponent implements OnInit {
     })
   }
 
+
+
+
+
   ngOnInit(): void {
   }
 
@@ -39,7 +46,10 @@ export class LogInComponent implements OnInit {
     if (response['effectedRows'] === 1) {
       Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
       this.router;
+
     }
+    localStorage.setItem(USER_INFO_KEY, JSON.stringify(response));
+
     console.log(response);
 
   }
@@ -50,7 +60,10 @@ export class LogInComponent implements OnInit {
       Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
       this.router;
     }
+
     console.log(response);
+
+
 
   }
 
