@@ -7,19 +7,19 @@ body {
 
 #threeD {
   
-  color: #10996d;
+  color: rgb(44, 42, 42);
   white-space: nowrap;
   
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.0em;
-  font-family: sans-serif;
+  font-family: 'Brush Script MT', cursive;
   letter-spacing: 0.1em;
   transition: 0.3s;
-  text-shadow: 1px 1px 0 rgb(38, 126, 78), 1px 2px 0 rgb(38, 126, 78), 1px 3px 0 rgb(38, 126, 78), 1px 4px 0 rgb(38, 126, 78),
-    1px 5px 0 rgb(38, 126, 78), 1px 6px 0 rgb(46, 200, 85), 1px 7px 0 rgb(46, 200, 85), 1px 8px 0 rgb(46, 200, 85),
-    0px 5px 5px rgb(2, 255, 32);
+  text-shadow: 1px 1px 0 rgb(112, 113, 113), 1px 2px 0 rgb(106, 106, 106), 1px 3px 0 rgb(38, 126, 78), 1px 4px 0 rgb(38, 126, 78),
+    1px 5px 0 rgb(38, 126, 78), 1px 6px 0 rgb(46, 200, 85), 1px 7px 0 rgb(92, 97, 97), 1px 8px 0 rgb(93, 94, 94),
+    0px 5px 5px black;;
 }
 
 #threeD:hover{

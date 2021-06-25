@@ -12,7 +12,7 @@
 <div class="usuarios">
     <div class="usuario" *ngFor="let usuario of arrUsuarios">
 
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
                 <div class="profile">
                     <h5 class="usuarioNombre">{{usuario.nombre}} </h5>
@@ -25,6 +25,28 @@
                         <h6>
                             Provincia
                         </h6>
+                    </span>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="team">
+        
+            <div class="container">
+                <div style="height: auto; width: auto;" class="profile">
+                    <h5 id="threeD" style="position: relative;" class="usuarioNombre">{{usuario.nombre}} </h5>
+        
+        
+        
+        
+        
+                    <img [routerLink]="['/api','clientes',usuario.id]" src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.12.26.png" alt="">
+        
+                    <span class="name">
+                        <h6>
+                            Provinvia
+                        </h6>
+        
                     </span>
                 </div>
             </div>
