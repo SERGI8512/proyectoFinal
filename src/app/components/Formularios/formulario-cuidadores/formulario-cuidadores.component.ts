@@ -1,3 +1,5 @@
+/// <reference path="../../../../../node_modules/@types/googlemaps/index.d.ts" />
+
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -45,6 +47,19 @@ export class FormularioCuidadoresComponent implements OnInit {
       Swal.fire('Cuidador Insertado Correctamente', 'Se ha creado un nuevo cuidador', 'succes');
       this.router;
     }
+  }
+
+  ngAfterViewInit() {
+
+    this.autocomplete();
+  }
+
+  autocomplete() {
+    const inputPlaces = document.getElementById('inputPlaces') as HTMLInputElement;
+    const autocomplete = new google.maps.places.Autocomplete(inputPlaces);
+
+    console.log(autocomplete);
+
   }
 
 }
