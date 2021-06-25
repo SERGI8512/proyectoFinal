@@ -130,3 +130,35 @@ body {
 
 
 
+.col-lg-4:hover {
+   background-color: rgba(0, 0, 0, 0.132);
+border: none;
+box-shadow: 0 0 10px black inset;
+transition: all 0.5s;
+padding: 4px;
+padding-top: 2%;
+
+
+}
+
+.featurette:hover {
+ background-color: rgba(0, 0, 0, 0.132);
+border: none;
+box-shadow: 0 0px 10px black inset;
+transition: all 0.5s;
+padding: 4px;
+}
+
+.col-lg-4{
+  transition: 0.6s;
+}
+
+.featurette{
+    transition: 0.6s;
+}
+
+
+
+
+
+
