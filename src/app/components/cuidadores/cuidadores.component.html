@@ -1,47 +1,48 @@
 <div class="titulo">
     <h1>Cuidadores Registrados</h1>
 </div>
-<div class="paginado">
-    <div class="btnUsuarios">
-        <p><a class="btn btn-lg btn-primary" href="api/usuarios">Ver Usuarios</a></p>
-    </div>
-    <div class="btnMascotas">
-        <p><a class="btn btn-lg btn-primary" href="api/mascotas">Ver Mascotas</a></p>
-    </div>
-</div>
+
 <div class="cuidadores">
     <div class="cuidador" *ngFor="let cuidador of arrCuidadores">
 
         <!-- Aquí tenemos que mirar como condicionar la aparación del avatar predefino con el perfil según seá hombre o mujer -->
 
         <div class="containerBtn">
-            <a (click)="onClick()" id="btnPerfilCompleto" class=""
-                    [routerLink]="['/api','cuidadores',cuidador.id]"></a>
-            
+            <a (click)="onClick()" id="btnPerfilCompleto" class="" [routerLink]="['/api','cuidadores',cuidador.id]"></a>
+
         </div>
         <section class="team">
-        
+
             <div class="container">
                 <div style="height: auto;" class="profile">
                     <h5 id="threeD" style="position: relative;" class="usuarioNombre">{{cuidador.nombre}} </h5>
-        
-        
-        
-        
-        
-                    <img  (click)="onClick()" id="btnPerfilCompleto" class=""
-                    [routerLink]="['/api','cuidadores',cuidador.id]" src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.13.16.png" alt="">
-        
+
+
+
+
+
+                    <img (click)="onClick()" id="btnPerfilCompleto" class=""
+                        [routerLink]="['/api','cuidadores',cuidador.id]"
+                        src="../../../assets/images/Captura de pantalla 2021-06-12 a las 1.13.16.png" alt="">
+
                     <span class="name">
                         <h6>
                             Provincia
                         </h6>
-        
+
                     </span>
                 </div>
             </div>
         </section>
-                
-       
+
+
+    </div>
+</div>
+<div class="paginado">
+    <div class="btnUsuarios">
+        <p><a class="btn btn-lg btn-primary" href="api/usuarios">Ver Usuarios</a></p>
+    </div>
+    <div class="btnMascotas">
+        <p><a class="btn btn-lg btn-primary" href="api/mascotas">Ver Mascotas</a></p>
     </div>
 </div>

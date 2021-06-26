@@ -33,10 +33,6 @@ export class LogInComponent implements OnInit {
     })
   }
 
-
-
-
-
   ngOnInit(): void {
   }
 
@@ -60,10 +56,9 @@ export class LogInComponent implements OnInit {
       Swal.fire('logIn realizado correctamente', 'Se ha realizado el logIn de manera correcta', 'succes');
       this.router;
     }
+    localStorage.setItem(USER_INFO_KEY, JSON.stringify(response));
 
     console.log(response);
-
-
 
   }
 
