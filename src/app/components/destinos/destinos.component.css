@@ -20,23 +20,24 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+/* .carousel {
   margin-bottom: 4rem;
-}
+} */
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   
-  bottom: 7rem;
+  
+  margin-bottom: 0px;
   z-index: 10;
 
 
   
     position: absolute; 
-    right: 50%;
-    top: 40px; /* Cambiar bottom por top y los píxeles que necesites */
+    right: 15%;
+    bottom: 40px; /* Cambiar bottom por top y los píxeles que necesites */
     left: 15%;
     z-index: 10;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
