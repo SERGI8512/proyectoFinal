@@ -1,9 +1,3 @@
-
-
-
-
-
-
 .paginado{
     width: 100%;
     display: flex;
@@ -18,11 +12,6 @@
 .btnMascotas{
     margin:  20px 0 0 0;
 }
-
-
-
-
-
 
 body {
   margin: 0;
@@ -40,11 +29,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.0em;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Brush Script MT', sans-serif;
   letter-spacing: 0.1em;
   transition: 0.3s;
-  text-shadow: 1px 1px 0 rgb(112, 113, 113), 1px 2px 0 rgb(106, 106, 106), 1px 3px 0 rgb(38, 126, 78), 1px 4px 0 rgb(38, 126, 78),
-    1px 5px 0 rgb(38, 126, 78), 1px 6px 0 rgb(46, 200, 85), 1px 7px 0 rgb(92, 97, 97), 1px 8px 0 rgb(93, 94, 94),
+  text-shadow: 1px 1px 0 rgb(112, 113, 113), 1px 2px 0 rgb(106, 106, 106), 1px 1px 0 rgb(38, 126, 78), 1px 1px 0 rgb(38, 126, 78), 1px 1px 0 rgb(46, 200, 85),
     0px 5px 5px black;
 }
 
@@ -53,24 +41,8 @@ body {
   transform: scale(1)translate(-50%, -50%);
   text-shadow: 1px -1px 0 rgb(38, 126, 78), 1px -2px 0 rgb(38, 126, 78), 1px -3px rgb(38, 126, 78),
     1px -4px 0 rgb(38, 126, 78), 1px -5px 0 rgb(38, 126, 78), 1px -6px 0 rgb(46, 200, 85), 1px -7px 0 rgb(46, 200, 85),
-    1px -8px 0 rgb(46, 200, 85), 5px -13px 15px rgb(46, 200, 85), 5px -13px 25px #0bff34;
+    1px -4px 0 rgb(46, 200, 85), 5px -8px 8px rgb(46, 200, 85);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .titulo{
     width: 100%;
@@ -92,8 +64,6 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 img{
     width: 150px;
@@ -122,20 +92,8 @@ img{
 }
 
 .btnUsuarios{
-    margin: 0px 20px 0 0;
+    margin: 0px 0px 0 0;
 }
-
-.btnMascotas{
-    margin: 0px 0 0 20px;
-}
-
-
-
-
-
-
-
-
 
   .container {
     display: flex;
@@ -170,7 +128,7 @@ img{
     position: absolute;
     background-color: #10996d;
     color: #fff;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Bebas Neue", sans-serif;
     padding: 20px 40px 10px 40px;
     border-radius: 100px;
     bottom: -65px; left: 50%;
@@ -195,6 +153,4 @@ img{
     opacity: 1;
     transform: translateX(-50%);
     box-shadow: 0 10px 20px rgba(48, 176, 85, 0.604);
-    
-
   }
